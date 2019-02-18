@@ -1,0 +1,219 @@
+wn-hydralex-sensed (senses in dict; weights on syn-sense connections)
+
+* ppr
+        ALL P= 62.8% R= 61.2% F1= 62.0%
+        semeval2007 P= 54.7% R= 54.7% F1= 54.7%
+        semeval2013 P= 58.7% R= 54.1% F1= 56.3%
+        semeval2015 P= 65.6% R= 64.5% F1= 65.0%
+        senseval2 P= 64.2% R= 63.1% F1= 63.6%
+        senseval3 P= 65.0% R= 64.9% F1= 64.9%
+
+* pprw2w
+        ALL P= 63.7% R= 62.1% F1= 62.9%
+        semeval2007 P= 54.3% R= 54.3% F1= 54.3%
+        semeval2013 P= 62.4% R= 57.6% F1= 59.9%
+        semeval2015 P= 69.1% R= 67.9% F1= 68.5%
+        senseval2 P= 66.4% R= 65.2% F1= 65.8%
+        senseval3 P= 61.0% R= 60.9% F1= 60.9%
+
+* static
+        ALL P= 49.8% R= 48.5% F1= 49.2%
+        semeval2007 P= 40.4% R= 40.4% F1= 40.4%
+        semeval2013 P= 46.7% R= 43.1% F1= 44.9%
+        semeval2015 P= 53.5% R= 52.6% F1= 53.1%
+        senseval2 P= 53.2% R= 52.3% F1= 52.7%
+        senseval3 P= 48.5% R= 48.5% F1= 48.5%
+=======================================================================
+wn-hydralex-sensed (senses in dict; NO weights)
+
+* ppr
+        ALL P= 63.0% R= 61.4% F1= 62.1%
+        semeval2007 P= 55.4% R= 55.4% F1= 55.4%
+        semeval2013 P= 58.8% R= 54.3% F1= 56.4%
+        semeval2015 P= 65.5% R= 64.4% F1= 64.9%
+        senseval2 P= 64.5% R= 63.3% F1= 63.9%
+        senseval3 P= 65.1% R= 65.0% F1= 65.0%
+
+* pprw2w
+        ALL P= 64.0% R= 62.4% F1= 63.2%
+        semeval2007 P= 52.7% R= 52.7% F1= 52.7%
+        semeval2013 P= 63.9% R= 59.0% F1= 61.4%
+        semeval2015 P= 69.2% R= 68.0% F1= 68.6%
+        senseval2 P= 66.5% R= 65.3% F1= 65.9%
+        senseval3 P= 61.1% R= 61.0% F1= 61.0%
+
+* static
+        ALL P= 49.2% R= 47.9% F1= 48.6%
+        semeval2007 P= 40.7% R= 40.7% F1= 40.7%
+        semeval2013 P= 47.3% R= 43.6% F1= 45.4%
+        semeval2015 P= 49.9% R= 49.0% F1= 49.4%
+        senseval2 P= 51.6% R= 50.7% F1= 51.1%
+        senseval3 P= 49.6% R= 49.6% F1= 49.6%
+=========================================================================
+wn-hydralex-sensed (senses in dict; NO weights on syn-sense connections)
+
+* ppr
+        ALL P= 62.9% R= 61.3% F1= 62.1%
+        semeval2007 P= 55.4% R= 55.4% F1= 55.4%
+        semeval2013 P= 58.6% R= 54.1% F1= 56.2%
+        semeval2015 P= 65.5% R= 64.4% F1= 64.9%
+        senseval2 P= 64.5% R= 63.3% F1= 63.9%
+        senseval3 P= 65.0% R= 64.9% F1= 64.9%
+
+* pprw2w
+        ALL P= 63.9% R= 62.2% F1= 63.0%
+        semeval2007 P= 53.0% R= 53.0% F1= 53.0%
+        semeval2013 P= 63.3% R= 58.5% F1= 60.8%
+        semeval2015 P= 69.0% R= 67.8% F1= 68.4%
+        senseval2 P= 66.5% R= 65.3% F1= 65.9%
+        senseval3 P= 61.0% R= 60.9% F1= 60.9%
+
+* static
+        ALL P= 48.8% R= 47.5% F1= 48.1%
+        semeval2007 P= 40.4% R= 40.4% F1= 40.4%
+        semeval2013 P= 46.7% R= 43.1% F1= 44.8%
+        semeval2015 P= 49.1% R= 48.2% F1= 48.6%
+        senseval2 P= 51.5% R= 50.6% F1= 51.0%
+        senseval3 P= 49.1% R= 49.0% F1= 49.0%
+
+=========================================================================
+wn-sensed (senses in dict; weights on syn-sense connections)
+
+Evaluating in Keys
+* ppr
+        ALL P= 63.1% R= 61.5% F1= 62.2%
+        semeval2007 P= 55.8% R= 55.8% F1= 55.8%
+        semeval2013 P= 58.5% R= 54.0% F1= 56.1%
+        semeval2015 P= 66.3% R= 65.2% F1= 65.7%
+        senseval2 P= 64.2% R= 63.1% F1= 63.6%
+        senseval3 P= 65.5% R= 65.5% F1= 65.5%
+
+* pprw2w
+        ALL P= 62.7% R= 61.1% F1= 61.9%
+        semeval2007 P= 51.4% R= 51.4% F1= 51.4%
+        semeval2013 P= 60.7% R= 56.0% F1= 58.3%
+        semeval2015 P= 68.6% R= 67.4% F1= 68.0%
+        senseval2 P= 66.3% R= 65.2% F1= 65.7%
+        senseval3 P= 59.7% R= 59.7% F1= 59.7%
+
+* static
+        ALL P= 49.1% R= 47.9% F1= 48.5%
+        semeval2007 P= 37.8% R= 37.8% F1= 37.8%
+        semeval2013 P= 46.5% R= 42.9% F1= 44.6%
+        semeval2015 P= 53.3% R= 52.4% F1= 52.9%
+        senseval2 P= 53.1% R= 52.1% F1= 52.6%
+        senseval3 P= 47.1% R= 47.0% F1= 47.0%
+========================================================================
+wn-sensed (senses in dict; NO weights on syn-sense connections)
+
+* ppr
+        ALL P= 63.4% R= 61.8% F1= 62.6%
+        semeval2007 P= 56.3% R= 56.3% F1= 56.3%
+        semeval2013 P= 58.4% R= 53.9% F1= 56.1%
+        semeval2015 P= 67.6% R= 66.4% F1= 67.0%
+        senseval2 P= 64.9% R= 63.8% F1= 64.4%
+        senseval3 P= 65.1% R= 65.0% F1= 65.0%
+
+* pprw2w
+        ALL P= 62.6% R= 61.0% F1= 61.8%
+        semeval2007 P= 50.3% R= 50.3% F1= 50.3%
+        semeval2013 P= 61.6% R= 56.8% F1= 59.1%
+        semeval2015 P= 68.3% R= 67.1% F1= 67.7%
+        senseval2 P= 65.8% R= 64.6% F1= 65.2%
+        senseval3 P= 59.5% R= 59.5% F1= 59.5%
+
+* static
+        ALL P= 48.2% R= 47.0% F1= 47.6%
+        semeval2007 P= 36.7% R= 36.7% F1= 36.7%
+        semeval2013 P= 46.5% R= 42.9% F1= 44.6%
+        semeval2015 P= 51.1% R= 50.3% F1= 50.7%
+        senseval2 P= 50.7% R= 49.8% F1= 50.2%
+        senseval3 P= 47.9% R= 47.9% F1= 47.9%
+
+========================================================================
+wn-sensed (synsets in dict; NO weights)
+
+* ppr
+        ALL P= 64.0% R= 64.0% F1= 64.0%
+        semeval2007 P= 53.6% R= 53.6% F1= 53.6%
+        semeval2013 P= 62.8% R= 62.8% F1= 62.8%
+        semeval2015 P= 67.0% R= 67.0% F1= 67.0%
+        senseval2 P= 64.6% R= 64.6% F1= 64.6%
+        senseval3 P= 65.0% R= 65.0% F1= 65.0%
+
+* pprw2w
+        ALL P= 62.3% R= 62.3% F1= 62.3%
+        semeval2007 P= 46.8% R= 46.8% F1= 46.8%
+        semeval2013 P= 64.8% R= 64.8% F1= 64.8%
+        semeval2015 P= 69.1% R= 69.1% F1= 69.1%
+        senseval2 P= 63.1% R= 63.1% F1= 63.1%
+        senseval3 P= 59.0% R= 59.0% F1= 59.0%
+
+* static
+        ALL P= 51.5% R= 51.5% F1= 51.5%
+        semeval2007 P= 40.7% R= 40.7% F1= 40.7%
+        semeval2013 P= 54.2% R= 54.2% F1= 54.2%
+        semeval2015 P= 54.3% R= 54.3% F1= 54.3%
+        senseval2 P= 54.4% R= 54.4% F1= 54.4%
+        senseval3 P= 46.8% R= 46.8% F1= 46.8%
+=======================================================================
+wn-sensed (synsets in dict; weights on syn-sense connections)
+
+* ppr
+        ALL P= 64.2% R= 64.2% F1= 64.2%
+        semeval2007 P= 54.5% R= 54.5% F1= 54.5%
+        semeval2013 P= 62.4% R= 62.4% F1= 62.4%
+        semeval2015 P= 67.5% R= 67.5% F1= 67.5%
+        senseval2 P= 65.4% R= 65.4% F1= 65.4%
+        senseval3 P= 64.8% R= 64.8% F1= 64.8%
+
+* pprw2w
+        ALL P= 62.2% R= 62.2% F1= 62.2%
+        semeval2007 P= 47.5% R= 47.5% F1= 47.5%
+        semeval2013 P= 65.1% R= 65.1% F1= 65.1%
+        semeval2015 P= 68.5% R= 68.5% F1= 68.5%
+        senseval2 P= 63.3% R= 63.3% F1= 63.3%
+        senseval3 P= 58.5% R= 58.5% F1= 58.5%
+
+* static
+        ALL P= 51.7% R= 51.7% F1= 51.7%
+        semeval2007 P= 40.7% R= 40.7% F1= 40.7%
+        semeval2013 P= 53.3% R= 53.3% F1= 53.3%
+        semeval2015 P= 55.0% R= 55.0% F1= 55.0%
+        senseval2 P= 54.4% R= 54.4% F1= 54.4%
+        senseval3 P= 47.6% R= 47.6% F1= 47.6%
+
+=======================================================================
+wn-hydralex-sensed (synsets in dict; NO weights)
+
+Evaluating in Keys
+* ppr
+        ALL P= 63.8% R= 63.8% F1= 63.8%
+        semeval2007 P= 53.0% R= 53.0% F1= 53.0%
+        semeval2013 P= 62.7% R= 62.7% F1= 62.7%
+        semeval2015 P= 66.7% R= 66.7% F1= 66.7%
+        senseval2 P= 64.7% R= 64.7% F1= 64.7%
+        senseval3 P= 65.0% R= 65.0% F1= 65.0%
+
+* pprw2w
+        ALL P= 63.1% R= 63.1% F1= 63.1%
+        semeval2007 P= 49.0% R= 49.0% F1= 49.0%
+        semeval2013 P= 64.3% R= 64.3% F1= 64.3%
+        semeval2015 P= 69.5% R= 69.5% F1= 69.5%
+        senseval2 P= 64.1% R= 64.1% F1= 64.1%
+        senseval3 P= 60.8% R= 60.8% F1= 60.8%
+
+* static
+        ALL P= 51.6% R= 51.6% F1= 51.6%
+        semeval2007 P= 42.2% R= 42.2% F1= 42.2%
+        semeval2013 P= 53.5% R= 53.5% F1= 53.5%
+        semeval2015 P= 55.7% R= 55.7% F1= 55.7%
+        senseval2 P= 54.4% R= 54.4% F1= 54.4%
+        senseval3 P= 46.7% R= 46.7% F1= 46.7%
+
+
+
+
+
+
+
