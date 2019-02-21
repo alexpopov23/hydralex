@@ -27,7 +27,7 @@ def dfs(vertex):
 def read_verbnet(path_to_verbnet):
 
     vn_classes = {}
-    them_roles_compendium = set()
+    them_roles_compendium = {}
     verbnet_hierarchy = {}
     num2class = {}
     wn_sense2vn_class = {}
@@ -56,7 +56,11 @@ def read_verbnet(path_to_verbnet):
                     type_sr = sel_restr_elem.get("type")
                     role_str +=  value_sr + type_sr
                     sel_restrs.append(value_sr + type_sr)
-                them_roles_compendium.add(role_str)
+                if role_str not in them_roles_compendium:
+                    them_roles_compendium[role_str] = 1
+                else:
+                    them_roles_compendium[role_str] += 1
+                # them_roles_compendium.add(role_str)
                 vn_class.them_roles.append((type, sel_restrs))
             them_roles_all[vn_class.name] = copy.copy(vn_class.them_roles)
             members = class_elem.findall("MEMBERS")[0].findall("MEMBER")
