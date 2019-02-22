@@ -117,5 +117,5 @@ if __name__ == "__main__":
                 to_write += new_relation
             with open(os.path.join(f_new_relations, filename.replace(".txt", "_weights.txt")), "w") as f_new:
                 f_new.write(to_write)
-            with open(os.path.join(f_new_relations, filename.replace(".txt", "_missing_nodes.txt")), "w") as f_missing:
-                f_missing.write("\n".join(missing_nodes))
+            # with open(os.path.join(f_new_relations, filename.replace(".txt", "_missing_nodes.txt")), "w") as f_missing:
+            #     f_missing.write("\n".join(missing_nodes))

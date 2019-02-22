@@ -2,6 +2,7 @@ import pickle
 
 import read_verbnet, read_framenet, read_fn_sense_repo
 from read_predicate_matrix import PMClass
+from senses2synsets import get_syn2sense
 
 def num2pos(sense):
     if sense == "NULL":
@@ -17,6 +18,8 @@ def num2pos(sense):
         return "a"
     elif pos_id == "4":
         return "r"
+    elif pos_id == "5":
+        return "a"
     else:
         return ""
 
@@ -24,7 +27,7 @@ f_pred_matrix = "/home/lenovo/dev/KBWSD/knowledge-resources/hydralex/data/pred_m
 f_verbnet = "/home/lenovo/dev/KBWSD/knowledge-resources/hydralex/data/new_vn"
 f_framenet = "/home/lenovo/dev/KBWSD/knowledge-resources/hydralex/data/framenet/"
 f_fn_sense_repo = "/home/lenovo/dev/KBWSD/knowledge-resources/FrameNet-sense-repository-April-2012/FrameNet-sense-repository-April-2012/"
-f_out = "/home/lenovo/dev/KBWSD/knowledge-resources/hydralex/data/hydralex.txt"
+f_out = "/home/lenovo/dev/KBWSD/knowledge-resources/hydralex/data/hydralex_fullysensed.txt"
 
 vn_classes, vn_roles_compendium, vn_class_hierarchy, vn_num2class, wn_sense2vn_class = read_verbnet.read_verbnet(f_verbnet)
 pred_matrix = pickle.load(open(f_pred_matrix, "r"))
@@ -124,6 +127,7 @@ count = len(new_relations)
 
 # Get relations from the FrameNet sense repository (frame to frame, frame to roles)
 print "*** Getting relations from the FN-WN automatic mappings ***"
+syn2sense = get_syn2sense()
 count = len(new_relations)
 count_duplicates = 0
 count_maps = 0
@@ -131,7 +135,7 @@ count_maps = 0
 for frame, mappings in frame2wn_synset.iteritems():
     for mapping in mappings:
         count_maps += 1
-        fn_role2wn_synset = "u:" + mapping[0] + " v:" + mapping[1] + " d:0 t:fn_role2wn_synset s:FN-sense-repository w:" + str(mapping[2])
+        fn_role2wn_synset = "u:" + mapping[0] + " v:" + syn2sense[mapping[1]] + " d:0 t:fn_role2wn_synset s:FN-sense-repository w:" + str(mapping[2])
         if fn_role2wn_synset in new_relations:
             count_duplicates += 1
         new_relations.add(fn_role2wn_synset)
