@@ -27,7 +27,7 @@ f_pred_matrix = "/home/lenovo/dev/KBWSD/knowledge-resources/hydralex/data/pred_m
 f_verbnet = "/home/lenovo/dev/KBWSD/knowledge-resources/hydralex/data/new_vn"
 f_framenet = "/home/lenovo/dev/KBWSD/knowledge-resources/hydralex/data/framenet/"
 f_fn_sense_repo = "/home/lenovo/dev/KBWSD/knowledge-resources/FrameNet-sense-repository-April-2012/FrameNet-sense-repository-April-2012/"
-f_out = "/home/lenovo/dev/KBWSD/knowledge-resources/hydralex/data/hydralex_fullysensed.txt"
+f_out = "/home/lenovo/dev/KBWSD/knowledge-resources/hydralex/data/hydralex_fullysensed2.txt"
 
 vn_classes, vn_roles_compendium, vn_class_hierarchy, vn_num2class, wn_sense2vn_class = read_verbnet.read_verbnet(f_verbnet)
 pred_matrix = pickle.load(open(f_pred_matrix, "r"))
@@ -60,12 +60,12 @@ for mapping in pred_matrix[0]:
             count_fn_frame += 1
     # Mapping between VN role and FN role (frame element)
     # vn_role = mapping.vn_role
-    if mapping.vn_role != "NULL" and mapping.fn_frame != "NULL":
+    if mapping.vn_role != "NULL" and mapping.fn_role != "NULL":
         for role in vn_classes[vn_num2class[vn_class]].them_roles:
             if role[0] == mapping.vn_role:
                 vn_role = role[0] + "".join(role[1])
                 # if vn_role != mapping.vn_role:
-                vn_role2fn_role = "u:" + vn_role + " v:" + mapping.fn_frame + " d:0 t:vn_role2fn_role s:PredicateMatrix"
+                vn_role2fn_role = "u:" + vn_role + " v:" + mapping.fn_role + " d:0 t:vn_role2fn_role s:PredicateMatrix"
                 if vn_role2fn_role not in new_relations:
                     new_relations.add(vn_role2fn_role)
                     count_vn_fn_role += 1
